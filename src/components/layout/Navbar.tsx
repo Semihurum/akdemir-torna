@@ -166,7 +166,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 border-2 border-gray-100 hover:border-primary transition-colors rounded-full p-1 pr-3"
               >
                 <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-100 relative">
-                  <Image src={user.profileImage || "/profiles/default-1.png"} alt="Profile" fill className="object-cover" />
+                  <Image src={user.profileImage || "/profiles/default-1.png"} alt="Profile" fill sizes="32px" className="object-cover" />
                 </div>
                 <span className="text-[12px] font-bold text-on-surface max-w-[100px] truncate">{user.name}</span>
                 <span className="material-symbols-outlined text-[18px] text-secondary">
