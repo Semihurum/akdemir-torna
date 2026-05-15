@@ -5,12 +5,20 @@ import Image from "next/image";
 import toast, { Toaster } from "react-hot-toast";
 
 // Tabs
-import UsersTab from "./components/UsersTab";
-import QuotesTab from "./components/QuotesTab";
-import NotifsTab from "./components/NotifsTab";
-import CMSForm from "./components/CMSForm";
+import UsersTab from "@/app/admin/components/UsersTab";
+import QuotesTab from "@/app/admin/components/QuotesTab";
+import NotifsTab from "@/app/admin/components/NotifsTab";
+import CMSForm from "@/app/admin/components/CMSForm";
 
-export default function AdminDashboard({ user, stats: initialStats, users, notifs, quotes }: any) {
+interface AdminDashboardProps {
+  user: { name: string; email: string; profileImage?: string };
+  stats: { userCount: number; messageCount: number; quoteCount: number };
+  users: any[];
+  notifs: any[];
+  quotes: any[];
+}
+
+export default function AdminDashboard({ user, stats: initialStats, users, notifs, quotes }: AdminDashboardProps) {
   const [activeTab, setActiveTab] = useState("dashboard");
 
   // Local state for stats so tabs can update them
@@ -47,7 +55,7 @@ export default function AdminDashboard({ user, stats: initialStats, users, notif
         <div className="p-4 border-t border-gray-100">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-10 h-10 rounded-full bg-gray-100 overflow-hidden relative border border-gray-200">
-               <Image src={user.profileImage || "/profiles/default-1.png"} alt="Admin" fill className="object-cover" />
+               <Image src={user.profileImage || "/profiles/default-1.png"} alt="Admin" fill sizes="40px" className="object-cover" />
             </div>
             <div className="flex-1 overflow-hidden">
               <p className="text-[13px] font-bold text-on-surface truncate">{user.name}</p>
