@@ -260,7 +260,7 @@ export default function RegisterPage() {
                       </span>
                     </div>
                     <span className="text-[12px] sm:text-[13px] text-secondary leading-tight mt-0.5 select-none">
-                      <Link href="/terms" className="text-primary hover:underline font-semibold" target="_blank">Hüküm ve Koşullar</Link>'ı okudum ve kabul ediyorum.
+                      <Link href="/hukum-ve-kosullar" className="text-primary hover:underline font-semibold" target="_blank">Hüküm ve Koşullar</Link>'ı okudum ve kabul ediyorum.
                     </span>
                   </label>
 
@@ -275,7 +275,7 @@ export default function RegisterPage() {
                       </span>
                     </div>
                     <span className="text-[12px] sm:text-[13px] text-secondary leading-tight mt-0.5 select-none">
-                      <Link href="/privacy" className="text-primary hover:underline font-semibold" target="_blank">Veri Koruma Politikası</Link>'nı (KVKK) okudum ve onaylıyorum.
+                      <Link href="/veri-koruma" className="text-primary hover:underline font-semibold" target="_blank">Veri Koruma Politikası</Link>'nı (KVKK) okudum ve onaylıyorum.
                     </span>
                   </label>
                 </div>

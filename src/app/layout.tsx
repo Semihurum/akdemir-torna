@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   keywords:
     "torna, CNC, metal işleme, hassas üretim, kalıp işleme, tornacılık, endüstriyel üretim, İstanbul",
   authors: [{ name: "Akdemirler Tornacılık" }],
+  icons: {
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-256.png", sizes: "256x256", type: "image/png" },
+    ],
+    apple: "/favicon-256.png",
+  },
   openGraph: {
     title: "Akdemirler Tornacılık | Endüstriyel Hassasiyet",
     description:

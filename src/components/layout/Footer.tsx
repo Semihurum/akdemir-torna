@@ -112,14 +112,14 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-5 md:px-8 pt-5 sm:pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] sm:text-[10px] uppercase tracking-widest font-bold opacity-40">
         <p className="text-center md:text-left">© 2025 {COMPANY.name}. Tüm Hakları Saklıdır.</p>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-5">
-          <Link href="#" className="hover:text-white transition-colors">
+          <Link href="/veri-koruma" className="hover:text-white transition-colors">
             Gizlilik
           </Link>
-          <Link href="#" className="hover:text-white transition-colors">
+          <Link href="/veri-koruma" className="hover:text-white transition-colors">
             KVKK
           </Link>
-          <Link href="#" className="hover:text-white transition-colors">
-            Çerezler
+          <Link href="/hukum-ve-kosullar" className="hover:text-white transition-colors">
+            Hüküm ve Koşullar
           </Link>
         </div>
       </div>
